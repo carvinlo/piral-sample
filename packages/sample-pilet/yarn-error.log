@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install --mutex network:42424 --non-interactive
+
+PATH: 
+  /Users/carvinlo/Downloads/sample/packages/sample-pilet/node_modules/.bin:/Users/carvinlo/Downloads/sample/packages/node_modules/.bin:/Users/carvinlo/Downloads/sample/node_modules/.bin:/Users/carvinlo/Downloads/node_modules/.bin:/Users/carvinlo/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/bin:/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/piral-core: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:130250:19)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+      at Timer.processTimers (timers.js:223:10)
+
+npm manifest: 
+  {
+  	"name": "sample-pilet",
+  	"version": "1.0.0",
+  	"description": "",
+  	"keywords": [
+  		"pilet"
+  	],
+  	"dependencies": {
+  		"piral-core": "0.11.7-pre.1433",
+  		"react": "^16.8.1",
+  		"react-dom": "^16.8.1",
+  		"react-router": ">=5.0.0",
+  		"react-router-dom": ">=5.0.0",
+  		"redux": "latest"
+  	},
+  	"devDependencies": {
+  		"@types/react": "^16.8.2",
+  		"@types/react-dom": "^16.8.0",
+  		"@types/react-router": "^5.0.0",
+  		"@types/react-router-dom": "^5.0.0",
+  		"piral-cli": "0.11.7-pre.1433",
+  		"piral-cli-webpack": "0.11.7-pre.1433"
+  	},
+  	"main": "dist/index.js",
+  	"files": [
+  		"dist"
+  	],
+  	"piral": {
+  		"comment": "Keep this section to use the Piral CLI.",
+  		"name": "app-shell"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
